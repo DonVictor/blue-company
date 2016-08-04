@@ -1,0 +1,23 @@
+@media (min-width: 768px){
+	.container {
+	    max-width: 730px;
+	}
+}
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+form #test label{
+	width: 130px;
+}
+
+footer{
+	margin-top: 20px;
+}

@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Prueba</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>ID</th>
+                <td>{{ test.id }}</td>
+            </tr>
+            <tr>
+                <th>Fecha</th>
+                <td>{% if test.dateAt %}{{ test.dateAt|date('d/m/Y') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Dias</th>
+                <td>{{ test.days }}</td>
+            </tr>
+            <tr>
+                <th>Resultado</th>
+                <td><strong>{% if test.resultAt %}{{ test.resultAt|date('d/m/Y') }}{% endif %}</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a class="btn btn-default" href="{{ path('test_index') }}">Lista</a>
+{% endblock %}

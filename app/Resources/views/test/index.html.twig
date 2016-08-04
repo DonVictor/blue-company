@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Prueba</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Fecha</th>
+                <th>Dias</th>
+                <th>Resultado</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for test in tests %}
+            <tr>
+                <td><a href="{{ path('test_show', { 'id': test.id }) }}">{{ test.id }}</a></td>
+                <td>{% if test.dateAt %}{{ test.dateAt|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ test.days }}</td>
+                <td>{% if test.resultAt %}{{ test.resultAt|date('Y-m-d') }}{% endif %}</td>
+                <td>
+                    <a class="btn btn-primary" href="{{ path('test_show', { 'id': test.id }) }}">Mostrar</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <a class="btn btn-default" href="{{ path('test_new') }}">Nuevo</a>
+{% endblock %}
