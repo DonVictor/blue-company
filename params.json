@@ -1,0 +1,6 @@
+{
+  "name": "Blue-company",
+  "tagline": "",
+  "body": "\r\nblue_company\r\n============\r\n\r\nA Symfony project created on August 3, 2016, 8:01 pm.\r\n=======\r\n# blue-company\r\n\r\nEste repositorio Corresponde al desarrollo de la prueba para Blue Company.\r\n\r\n## Pasos a Seguir:\r\n1- Primero se debe clonar este repositorio\r\n2- Este proyecto se puede levantar con el gestor de Symfony: con el comando:\r\n```sh\r\nphp bin/console server:run \r\n```\r\n3 - Se pueve visualizar ingresando a la siguiente url: [http://localhost:8000/app_dev.php/test](http://localhost:8000/app_dev.php/test)\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
